@@ -66,7 +66,7 @@ public class UploadController {
 
                 //섬네일 파일 이름 중간에 s_가 들어가도록 생성
                 String thumbnailSaveName = uploadPath + File.separator + folderPath + File.separator +
-                        "s_" + uuid + fileName;
+                        "s_" + uuid + "_" + fileName;
 
                 File thumbnailFile = new File(thumbnailSaveName);
                 Thumbnailator.createThumbnail(savePath.toFile(), thumbnailFile, 100, 100);
