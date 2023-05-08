@@ -85,7 +85,7 @@
     </div>
 
     <script th:inline="javascript">
-      var msg = [[${msg}]];
+      let msg = [[${msg}]];
 
       console.log(msg);
 
@@ -93,7 +93,7 @@
         $(".modal").modal();
       }
 
-      var searchForm = $("#searchForm");
+      let searchForm = $("#searchForm");
 
       $('.btn-search').click(function(e) {
         searchForm.submit();
